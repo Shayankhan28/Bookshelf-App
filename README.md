@@ -43,26 +43,41 @@
 ## 📁 Project Structure
 
 bookstore/
+│
 ├── app/
 │ ├── (auth)/
 │ │ ├── login.js # Login screen
 │ │ └── register.js # Registration screen
+│ │
 │ ├── (tabs)/
 │ │ ├── \_layout.js # Tab navigation layout
 │ │ ├── index.js # Home screen
 │ │ ├── search.js # Search screen
 │ │ ├── profile.js # User profile screen
 │ │ └── booklist.js # All books screen
+│ │
 │ ├── \_layout.js # Root layout with auth flow
 │ └── book-detail.js # Book details screen
+│
 ├── services/
 │ ├── bookApi.js # OpenLibrary API calls
 │ └── firebaseConfig.js # Firebase configuration
+│
 ├── utils/
 │ └── storage.js # AsyncStorage operations
+│
 ├── assets/
 │ └── screenshots/ # App screenshots
-├── .gitignore
+│ ├── login-screen.jpeg
+│ ├── register-screen.jpeg
+│ ├── home-screen.jpeg
+│ ├── search-screen.jpeg
+│ ├── library-screen.jpeg
+│ ├── book-detail.jpeg
+│ ├── favorites.jpeg
+│ └── profile-screen.jpeg
+│
+├── .gitignore # Git ignore rules
 ├── app.json # Expo configuration
 ├── package.json # Dependencies
 ├── babel.config.js # Babel configuration
