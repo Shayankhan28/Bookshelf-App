@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     marginBottom: 20,
   },
-  headerTitle: { fontSize: 18, fontWeight: "bold", color: "#3B5BDB" },
+  headerTitle: { fontSize: 20, fontWeight: "bold", color: "#3B5BDB" },
   avatarBox: { alignItems: "center", marginBottom: 10 },
   avatar: {
     width: 90,

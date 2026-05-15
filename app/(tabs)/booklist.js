@@ -49,19 +49,9 @@ export default function BookListScreen() {
     <View style={styles.container}>
       {/* Header */}
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => router.back()}>
-          <Ionicons name="arrow-back" size={22} color="#333" />
-        </TouchableOpacity>
-        <Text style={styles.headerTitle}>All Books</Text>
-        <View style={{ flexDirection: "row" }}>
-          <Ionicons
-            name="search-outline"
-            size={22}
-            color="#333"
-            style={{ marginRight: 14 }}
-          />
-          <Ionicons name="options-outline" size={22} color="#333" />
-        </View>
+        <View style={styles.headerLeft} />
+        <Text style={styles.headerTitle}>BookShelf</Text>
+        <Ionicons name="options-outline" size={22} color="#333" />
       </View>
 
       {/* Genre chips */}
@@ -134,7 +124,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     marginBottom: 14,
   },
-  headerTitle: { fontSize: 18, fontWeight: "bold", color: "#1a1a2e" },
+  headerLeft: {
+    width: 24, // Same width as options icon for balance
+  },
+  headerTitle: {
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "#3B5BDB",
+    textAlign: "center",
+  },
   genres: {
     flexDirection: "row",
     paddingHorizontal: 16,

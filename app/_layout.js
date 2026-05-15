@@ -1,7 +1,7 @@
 import { Stack, useRouter, useSegments } from "expo-router";
 import { onAuthStateChanged } from "firebase/auth";
 import { useEffect, useState } from "react";
-import { ActivityIndicator, View } from "react-native";
+import { ActivityIndicator, View } from "react-native"; // ← Check this
 import { auth } from "../services/firebaseConfig";
 
 export default function RootLayout() {
@@ -22,7 +22,7 @@ export default function RootLayout() {
     const inAuth = segments[0] === "(auth)";
     if (!user && !inAuth) router.replace("/(auth)/login");
     else if (user && inAuth) router.replace("/(tabs)/");
-  }, [user, loading]);
+  }, [user, loading, segments]);
 
   if (loading)
     return (
@@ -39,7 +39,7 @@ export default function RootLayout() {
         name="book-detail"
         options={{
           headerShown: true,
-          title: "BookShelf",
+          title: "Book Details",
           headerTintColor: "#3B5BDB",
           headerTitleStyle: { fontWeight: "bold", color: "#3B5BDB" },
         }}

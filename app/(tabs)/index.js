@@ -39,6 +39,7 @@ export default function HomeScreen() {
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
       {/* Header */}
       <View style={styles.header}>
+        <View style={styles.headerLeft} />
         <Text style={styles.headerTitle}>BookShelf</Text>
         <View style={styles.headerIcons}>
           <Ionicons
@@ -138,12 +139,24 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    paddingHorizontal: 16,
+    paddingHorizontal: 30,
     paddingTop: 54,
     paddingBottom: 12,
   },
-  headerTitle: { fontSize: 20, fontWeight: "bold", color: "#3B5BDB" },
-  headerIcons: { flexDirection: "row", alignItems: "center" },
+  headerLeft: {
+    width: 30, // Same width as headerIcons for balance
+  },
+  headerTitle: {
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "#3B5BDB",
+    textAlign: "center",
+  },
+  headerIcons: {
+    flexDirection: "row",
+    alignItems: "center",
+    width: 30, // Fixed width for alignment
+  },
   sectionTitle: {
     fontSize: 16,
     fontWeight: "700",
