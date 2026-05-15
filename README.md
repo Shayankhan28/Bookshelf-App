@@ -1,11 +1,11 @@
 # 📚 BookShelf
 
+**BookShelf** is a modern mobile application built with **React Native (Expo)** that allows users to discover, explore, and manage their personal book collection. Users can register/login using Firebase authentication, browse books via OpenLibrary API, add books to favorites (persisted with AsyncStorage), and manage their reading journey seamlessly.
+
 [![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev)
 [![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev)
 [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-
-**BookShelf** is a modern mobile application built with **React Native (Expo)** that allows users to discover, explore, and manage their personal book collection. Users can register/login using Firebase authentication, browse books via OpenLibrary API, add books to favorites (persisted with AsyncStorage), and manage their reading journey seamlessly.
 
 ---
 
@@ -107,9 +107,9 @@ Create services/firebaseConfig.js with your Firebase config
 
 5. Start the app
 
--bash
--npx expo start
--Scan QR code with Expo Go app
+bash
+npx expo start
+Scan QR code with Expo Go app
 
 Press i for iOS simulator
 
@@ -147,20 +147,6 @@ npx expo start --android
 
 npx expo start --ios
 
-# Build for production
-
-eas build -p android --profile preview
-📸 Screenshots Location
-
-assets/screenshots/
-├── login-screen.jpeg (123 KB)
-├── register-screen.jpeg (175 KB)
-├── home-screen.jpeg (76 KB)
-├── search-screen.jpeg (81 KB)
-├── library-screen.jpeg (67 KB)
-├── book-detail.jpeg (54 KB)
-├── favorites.jpeg (XX KB)
-└── profile-screen.jpeg (39 KB)
 🐛 Common Issues & Solutions
 Issue Solution
 Firebase not initializing Check API keys in firebaseConfig.js
@@ -211,11 +197,3 @@ Project Link: https://github.com/Shayankhan28/Bookshelf-App
 
 🙏 Acknowledgments
 OpenLibrary API - Book data provider
-
-Firebase - Authentication & backend services
-
-Expo - React Native development platform
-
-React Navigation - Navigation library
-
-Ionicons - Icon set
